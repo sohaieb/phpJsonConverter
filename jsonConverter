@@ -1,0 +1,15 @@
+<?php
+if(count($argv)<3){
+    die('php jsonConverter "fileName.json" "outputFileName.json"');
+}
+$inputFileName = $argv[1];
+$outputFileName = $argv[2];
+
+$fileContent = json_decode(file_get_contents($inputFileName),true);
+foreach ($fileContent as $key=>&$city) {
+    $city['id'] = $key+1;
+}
+
+$f = fopen($outputFileName,'w');
+fwrite($f,json_encode($fileContent,JSON_UNESCAPED_UNICODE ));
+fclose($f);
