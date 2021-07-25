@@ -10,4 +10,6 @@ yes , you can, but just you have to change the mapping function logic called `ma
 
 ## Contacts
 Report bugs or suggest features using [issue tracker on GitHub](https://github.com/sohaieb/phpJsonConverter/issues).
-Created by Sohaieb Azaiez
+
+## Author
+[Sohaieb Azaiez](https://www.linkedin.com/in/azsoh/)
